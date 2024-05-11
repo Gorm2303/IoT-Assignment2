@@ -1,0 +1,729 @@
+d_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2024 15:19:15[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25658h (153176) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00035680 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=0003568c vaddr=3ffb0000 size=03adch ( 15068) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00039170 vaddr=40080000 size=06ea8h ( 28328) load[0m
+[0;32mI (186) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a1080h (659584) map[0m
+[0;32mI (425) esp_image: segment 5: paddr=000e10a8 vaddr=40086ea8 size=0ed94h ( 60820) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (473) cpu_start: Pro cpu up.[0m
+[0;32mI (473) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (491) cpu_start: Pro cpu start user code[0m
+[0;32mI (491) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (491) cpu_start: Application information:[0m
+[0;32mI (496) cpu_start: Project name:     oneshot_read[0m
+[0;32mI (501) cpu_start: App version:      1[0m
+[0;32mI (506) cpu_start: Compile time:     May  9 2024 10:24:00[0m
+[0;32mI (512) cpu_start: ELF file SHA256:  ff77a393d775574e...[0m
+[0;32mI (518) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (523) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (528) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (533) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (537) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (545) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (551) heap_init: At 3FFB8180 len 00027E80 (159 KiB): DRAM[0m
+[0;32mI (557) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (563) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (570) heap_init: At 40095C3C len 0000A3C4 (40 KiB): IRAM[0m
+[0;32mI (577) spi_flash: detected chip: generic[0m
+[0;32mI (580) spi_flash: flash io: dio[0m
+[0;33mW (584) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (598) app_start: Starting scheduler on CPU0[0m
+[0;32mI (603) app_start: Starting scheduler on CPU1[0m
+[0;32mI (603) main_task: Started on CPU0[0m
+[0;32mI (613) main_task: Calling app_main()[0m
+I (653) wifi:wifi driver task: 3ffc0258, prio:23, stack:6656, core=0
+I (663) wifi:wifi firmware version: 91b9630
+I (673) wifi:wifi certification version: v7.0
+I (673) wifi:config NVS flash: enabled
+I (673) wifi:config nano formating: disabled
+I (673) wifi:Init data frame dynamic rx buffer num: 32
+I (673) wifi:Init static rx mgmt buffer num: 5
+I (683) wifi:Init management short buffer num: 32
+I (683) wifi:Init dynamic tx buffer num: 32
+I (693) wifi:Init static rx buffer size: 1600
+I (693) wifi:Init static rx buffer num: 10
+I (693) wifi:Init dynamic rx buffer num: 32
+[0;32mI (703) wifi_init: rx ba win: 6[0m
+[0;32mI (703) wifi_init: tcpip mbox: 32[0m
+[0;32mI (713) wifi_init: udp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp tx win: 5744[0m
+[0;32mI (723) wifi_init: tcp rx win: 5744[0m
+[0;32mI (723) wifi_init: tcp mss: 1440[0m
+[0;32mI (733) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (733) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (743) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (823) wifi:mode : sta (10:97:bd:d5:56:6c)
+I (823) wifi:enable tsf
+[0;32mI (833) MQTT: Unhandled MQTT event: 7[0m
+[0;31mE (833) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (833) transport_base: Failed to open a new connection: 32769[0m
+I (833) wifi:[0;31mE (843) mqtt_client: Error transport connect[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (843) MQTT: Unhandled MQTT event: 0[0m
+I (853) wifi:state: init -> auth (b0)[0;32mI (853) MQTT: MQTT disconnected[0m
+
+[0;32mI (833) main_task: Returned from app_main()[0m
+I (863) wifi:state: auth -> assoc (0)
+I (893) wifi:state: assoc -> run (10)
+I (923) wifi:connected with SkyNet, aid = 1, channel 1, BW20, bssid = 52:1e:50:fb:ac:4b
+I (923) wifi:security: WPA2-PSK, phy: bgn, rssi: -30
+I (933) wifi:pm start, type: 1
+
+I (933) wifi:<ba-add>idx:0 (ifx:0, 52:1e:50:fb:ac:4b), tid:0, ssn:0, winSize:64
+I (983) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1933) esp_netif_handlers: sta ip: 192.168.233.251, mask: 255.255.255.0, gw: 192.168.233.93[0m
+[0;32mI (1933) WIFI: Got IP address: 192.168.233.251[0m
+[0;32mI (10863) MQTT: Unhandled MQTT event: 7[0m
+[0;32mI (11533) MQTT: MQTT connected[0m
+[0;32mI (11593) MQTT: Unhandled MQTT event: 3[0m
+[0;32mI (12353) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (12353) MQTT: Invalid data format[0m
+[0;32mI (14603) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (14613) MQTT: Invalid data format[0m
+[0;32mI (17063) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (17063) MQTT: Invalid data format[0m
+[0;32mI (19533) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (19533) MQTT: Invalid data format[0m
+[0;32mI (21983) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (21983) MQTT: Invalid data format[0m
+[0;32mI (24233) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (24233) MQTT: Invalid data format[0m
+[0;32mI (26893) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (26893) MQTT: Invalid data format[0m
+[0;32mI (29363) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (29363) MQTT: Invalid data format[0m
+[0;32mI (32023) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (32023) MQTT: Invalid data format[0m
+[0;32mI (34063) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (34063) MQTT: Invalid data format[0m
+[0;32mI (36423) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (36423) MQTT: Invalid data format[0m
+[0;32mI (38773) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (38773) MQTT: Invalid data format[0m
+[0;32mI (41023) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (41023) MQTT: Invalid data format[0m
+[0;32mI (43693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (43693) MQTT: Invalid data format[0m
+[0;32mI (45943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (45943) MQTT: Invalid data format[0m
+[0;32mI (48403) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (48403) MQTT: Invalid data format[0m
+[0;32mI (51573) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (51573) MQTT: Invalid data format[0m
+[0;32mI (53313) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (53313) MQTT: Invalid data format[0m
+[0;32mI (55773) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (55773) MQTT: Invalid data format[0m
+[0;32mI (58043) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (58043) MQTT: Invalid data format[0m
+[0;32mI (60483) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (60483) MQTT: Invalid data format[0m
+[0;32mI (62533) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (62533) MQTT: Invalid data format[0m
+[0;32mI (66013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (66013) MQTT: Invalid data format[0m
+[0;32mI (68263) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (68263) MQTT: Invalid data format[0m
+[0;32mI (70523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (70523) MQTT: Invalid data format[0m
+[0;32mI (73183) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (73183) MQTT: Invalid data format[0m
+[0;32mI (75433) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (75433) MQTT: Invalid data format[0m
+[0;32mI (78303) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (78303) MQTT: Invalid data format[0m
+[0;32mI (80553) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (80553) MQTT: Invalid data format[0m
+[0;32mI (82603) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (82603) MQTT: Invalid data format[0m
+[0;32mI (84853) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (84853) MQTT: Invalid data format[0m
+[0;32mI (87313) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (87313) MQTT: Invalid data format[0m
+[0;32mI (89563) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (89573) MQTT: Invalid data format[0m
+[0;32mI (91823) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (91823) MQTT: Invalid data format[0m
+[0;32mI (94273) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (94273) MQTT: Invalid data format[0m
+[0;32mI (96523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (96533) MQTT: Invalid data format[0m
+[0;32mI (98983) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (98983) MQTT: Invalid data format[0m
+[0;32mI (101233) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (101243) MQTT: Invalid data format[0m
+[0;32mI (103693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (103693) MQTT: Invalid data format[0m
+[0;32mI (106163) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (106163) MQTT: Invalid data format[0m
+[0;32mI (108613) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (108613) MQTT: Invalid data format[0m
+[0;32mI (110863) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (110863) MQTT: Invalid data format[0m
+[0;32mI (113323) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (113323) MQTT: Invalid data format[0m
+[0;32mI (115573) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (115573) MQTT: Invalid data format[0m
+[0;32mI (118643) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (118653) MQTT: Invalid data format[0m
+[0;32mI (120693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (120693) MQTT: Invalid data format[0m
+[0;32mI (122943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (122943) MQTT: Invalid data format[0m
+[0;32mI (125403) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (125403) MQTT: Invalid data format[0m
+[0;32mI (127863) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (127863) MQTT: Invalid data format[0m
+[0;32mI (130323) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (130323) MQTT: Invalid data format[0m
+[0;32mI (132573) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (132573) MQTT: Invalid data format[0m
+[0;32mI (134843) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (134843) MQTT: Invalid data format[0m
+[0;32mI (137283) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (137283) MQTT: Invalid data format[0m
+[0;32mI (139743) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (139743) MQTT: Invalid data format[0m
+[0;32mI (142303) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (142303) MQTT: Invalid data format[0m
+[0;32mI (144243) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (144243) MQTT: Invalid data format[0m
+[0;32mI (147013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (147013) MQTT: Invalid data format[0m
+[0;32mI (148963) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (148963) MQTT: Invalid data format[0m
+[0;32mI (151413) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (151413) MQTT: Invalid data format[0m
+[0;32mI (153873) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (153873) MQTT: Invalid data format[0m
+[0;32mI (156123) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (156123) MQTT: Invalid data format[0m
+[0;32mI (158583) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (158583) MQTT: Invalid data format[0m
+[0;32mI (161473) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (161473) MQTT: Invalid data format[0m
+[0;32mI (163403) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (163403) MQTT: Invalid data format[0m
+[0;32mI (165753) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (165753) MQTT: Invalid data format[0m
+[0;32mI (168003) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (168003) MQTT: Invalid data format[0m
+[0;32mI (170263) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (170263) MQTT: Invalid data format[0m
+[0;32mI (172713) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (172713) MQTT: Invalid data format[0m
+[0;32mI (174963) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (174963) MQTT: Invalid data format[0m
+[0;32mI (177423) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (177433) MQTT: Invalid data format[0m
+[0;32mI (179883) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (179883) MQTT: Invalid data format[0m
+[0;32mI (182343) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (182343) MQTT: Invalid data format[0m
+[0;32mI (184593) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (184593) MQTT: Invalid data format[0m
+[0;32mI (186843) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (186843) MQTT: Invalid data format[0m
+[0;32mI (189303) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (189303) MQTT: Invalid data format[0m
+[0;32mI (191553) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (191553) MQTT: Invalid data format[0m
+[0;32mI (194013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (194013) MQTT: Invalid data format[0m
+[0;32mI (196263) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (196273) MQTT: Invalid data format[0m
+[0;32mI (199133) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (199133) MQTT: Invalid data format[0m
+[0;32mI (200973) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (200973) MQTT: Invalid data format[0m
+[0;32mI (203433) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (203433) MQTT: Invalid data format[0m
+[0;32mI (205693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (205693) MQTT: Invalid data format[0m
+[0;32mI (207943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (207943) MQTT: Invalid data format[0m
+[0;32mI (210393) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (210393) MQTT: Invalid data format[0m
+[0;32mI (212653) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (212653) MQTT: Invalid data format[0m
+[0;32mI (214903) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (214903) MQTT: Invalid data format[0m
+[0;32mI (217153) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (217153) MQTT: Invalid data format[0m
+[0;32mI (219613) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (219613) MQTT: Invalid data format[0m
+[0;32mI (222273) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (222273) MQTT: Invalid data format[0m
+[0;32mI (224343) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (224343) MQTT: Invalid data format[0m
+[0;32mI (226983) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (226983) MQTT: Invalid data format[0m
+[0;32mI (229243) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (229243) MQTT: Invalid data format[0m
+[0;32mI (231693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (231693) MQTT: Invalid data format[0m
+[0;32mI (234153) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (234153) MQTT: Invalid data format[0m
+[0;32mI (236613) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (236613) MQTT: Invalid data format[0m
+[0;32mI (239073) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (239073) MQTT: Invalid data format[0m
+[0;32mI (241323) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (241323) MQTT: Invalid data format[0m
+[0;32mI (243883) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (243883) MQTT: Invalid data format[0m
+[0;32mI (245833) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (245833) MQTT: Invalid data format[0m
+[0;32mI (248283) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (248283) MQTT: Invalid data format[0m
+[0;32mI (250543) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (250543) MQTT: Invalid data format[0m
+[0;32mI (253013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (253013) MQTT: Invalid data format[0m
+[0;32mI (255043) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (255043) MQTT: Invalid data format[0m
+[0;32mI (257293) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (257293) MQTT: Invalid data format[0m
+[0;32mI (259763) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (259763) MQTT: Invalid data format[0m
+[0;32mI (262013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (262013) MQTT: Invalid data format[0m
+[0;32mI (264463) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (264463) MQTT: Invalid data format[0m
+[0;32mI (266923) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (266923) MQTT: Invalid data format[0m
+[0;32mI (268973) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (268973) MQTT: Invalid data format[0m
+[0;32mI (271443) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (271443) MQTT: Invalid data format[0m
+[0;32mI (273693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (273693) MQTT: Invalid data format[0m
+[0;32mI (276163) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (276163) MQTT: Invalid data format[0m
+[0;32mI (278603) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (278603) MQTT: Invalid data format[0m
+[0;32mI (281063) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (281063) MQTT: Invalid data format[0m
+[0;32mI (283513) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (283513) MQTT: Invalid data format[0m
+[0;32mI (285763) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (285763) MQTT: Invalid data format[0m
+[0;32mI (288013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (288013) MQTT: Invalid data format[0m
+[0;32mI (290683) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (290683) MQTT: Invalid data format[0m
+[0;32mI (292723) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (292723) MQTT: Invalid data format[0m
+[0;32mI (295183) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (295183) MQTT: Invalid data format[0m
+[0;32mI (298053) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (298053) MQTT: Invalid data format[0m
+[0;32mI (300513) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (300513) MQTT: Invalid data format[0m
+[0;32mI (302353) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (302353) MQTT: Invalid data format[0m
+[0;32mI (304813) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (304813) MQTT: Invalid data format[0m
+[0;32mI (306863) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (306863) MQTT: Invalid data format[0m
+[0;32mI (309313) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (309313) MQTT: Invalid data format[0m
+[0;32mI (312183) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (312183) MQTT: Invalid data format[0m
+[0;32mI (315053) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (315053) MQTT: Invalid data format[0m
+[0;32mI (317503) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (317513) MQTT: Invalid data format[0m
+[0;32mI (319763) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (319763) MQTT: Invalid data format[0m
+[0;32mI (322213) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (322223) MQTT: Invalid data format[0m
+[0;32mI (324263) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (324263) MQTT: Invalid data format[0m
+[0;32mI (326523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (326523) MQTT: Invalid data format[0m
+[0;32mI (328983) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (328983) MQTT: Invalid data format[0m
+[0;32mI (331433) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (331433) MQTT: Invalid data format[0m
+[0;32mI (334303) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (334303) MQTT: Invalid data format[0m
+[0;32mI (336563) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (336563) MQTT: Invalid data format[0m
+[0;32mI (339013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (339013) MQTT: Invalid data format[0m
+[0;32mI (341263) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (341263) MQTT: Invalid data format[0m
+[0;32mI (343723) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (343723) MQTT: Invalid data format[0m
+[0;32mI (346183) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (346183) MQTT: Invalid data format[0m
+[0;32mI (348433) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (348433) MQTT: Invalid data format[0m
+[0;32mI (350683) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (350683) MQTT: Invalid data format[0m
+[0;32mI (353143) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (353143) MQTT: Invalid data format[0m
+[0;32mI (355413) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (355413) MQTT: Invalid data format[0m
+[0;32mI (357853) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (357853) MQTT: Invalid data format[0m
+[0;32mI (360313) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (360313) MQTT: Invalid data format[0m
+[0;32mI (362563) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (362563) MQTT: Invalid data format[0m
+[0;32mI (364813) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (364813) MQTT: Invalid data format[0m
+[0;32mI (367073) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (367073) MQTT: Invalid data format[0m
+[0;32mI (369523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (369533) MQTT: Invalid data format[0m
+[0;32mI (371783) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (371783) MQTT: Invalid data format[0m
+[0;32mI (374243) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (374243) MQTT: Invalid data format[0m
+[0;32mI (376513) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (376513) MQTT: Invalid data format[0m
+[0;32mI (378953) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (378953) MQTT: Invalid data format[0m
+[0;32mI (381403) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (381403) MQTT: Invalid data format[0m
+[0;32mI (383663) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (383663) MQTT: Invalid data format[0m
+[0;32mI (386113) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (386113) MQTT: Invalid data format[0m
+[0;32mI (388573) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (388573) MQTT: Invalid data format[0m
+[0;32mI (390623) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (390623) MQTT: Invalid data format[0m
+[0;32mI (392873) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (392873) MQTT: Invalid data format[0m
+[0;32mI (395123) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (395133) MQTT: Invalid data format[0m
+[0;32mI (397583) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (397583) MQTT: Invalid data format[0m
+[0;32mI (419493) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (419503) MQTT: Invalid data format[0m
+[0;32mI (421963) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (421963) MQTT: Invalid data format[0m
+[0;32mI (424213) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (424213) MQTT: Invalid data format[0m
+[0;32mI (426673) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (426673) MQTT: Invalid data format[0m
+[0;32mI (428923) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (428923) MQTT: Invalid data format[0m
+[0;32mI (431373) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (431373) MQTT: Invalid data format[0m
+[0;32mI (434043) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (434043) MQTT: Invalid data format[0m
+[0;32mI (436093) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (436093) MQTT: Invalid data format[0m
+[0;32mI (438343) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (438343) MQTT: Invalid data format[0m
+[0;32mI (441103) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (441103) MQTT: Invalid data format[0m
+[0;32mI (443253) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (443253) MQTT: Invalid data format[0m
+[0;32mI (445713) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (445713) MQTT: Invalid data format[0m
+[0;32mI (447973) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (447973) MQTT: Invalid data format[0m
+[0;32mI (450223) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (450223) MQTT: Invalid data format[0m
+[0;32mI (452473) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (452473) MQTT: Invalid data format[0m
+[0;32mI (455133) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (455133) MQTT: Invalid data format[0m
+[0;32mI (460053) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (460053) MQTT: Invalid data format[0m
+[0;32mI (462303) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (462303) MQTT: Invalid data format[0m
+[0;32mI (464553) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (464553) MQTT: Invalid data format[0m
+[0;32mI (467223) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (467223) MQTT: Invalid data format[0m
+[0;32mI (469673) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (469673) MQTT: Invalid data format[0m
+[0;32mI (472133) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (472133) MQTT: Invalid data format[0m
+[0;32mI (474183) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (474183) MQTT: Invalid data format[0m
+[0;32mI (476633) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (476643) MQTT: Invalid data format[0m
+[0;32mI (479093) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (479093) MQTT: Invalid data format[0m
+[0;32mI (481143) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (481143) MQTT: Invalid data format[0m
+[0;32mI (483603) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (483603) MQTT: Invalid data format[0m
+[0;32mI (485853) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (485853) MQTT: Invalid data format[0m
+[0;32mI (488513) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (488513) MQTT: Invalid data format[0m
+[0;32mI (490773) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (490773) MQTT: Invalid data format[0m
+[0;32mI (493023) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (493023) MQTT: Invalid data format[0m
+[0;32mI (495273) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (495273) MQTT: Invalid data format[0m
+[0;32mI (497523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (497533) MQTT: Invalid data format[0m
+[0;32mI (499993) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (499993) MQTT: Invalid data format[0m
+[0;32mI (502443) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (502443) MQTT: Invalid data format[0m
+[0;32mI (504693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (504693) MQTT: Invalid data format[0m
+[0;32mI (506943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (506953) MQTT: Invalid data format[0m
+[0;32mI (509403) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (509403) MQTT: Invalid data format[0m
+[0;32mI (511453) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (511453) MQTT: Invalid data format[0m
+[0;32mI (513913) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (513913) MQTT: Invalid data format[0m
+[0;32mI (516373) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (516373) MQTT: Invalid data format[0m
+[0;32mI (518623) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (518623) MQTT: Invalid data format[0m
+[0;32mI (521093) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (521093) MQTT: Invalid data format[0m
+[0;32mI (523543) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (523543) MQTT: Invalid data format[0m
+[0;32mI (525803) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (525803) MQTT: Invalid data format[0m
+[0;32mI (528043) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (528043) MQTT: Invalid data format[0m
+[0;32mI (530293) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (530293) MQTT: Invalid data format[0m
+[0;32mI (532553) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (532553) MQTT: Invalid data format[0m
+[0;32mI (535003) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (535003) MQTT: Invalid data format[0m
+[0;32mI (537253) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (537263) MQTT: Invalid data format[0m
+[0;32mI (539713) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (539713) MQTT: Invalid data format[0m
+[0;32mI (541963) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (541973) MQTT: Invalid data format[0m
+[0;32mI (544223) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (544223) MQTT: Invalid data format[0m
+[0;32mI (546473) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (546473) MQTT: Invalid data format[0m
+[0;32mI (548933) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (548933) MQTT: Invalid data format[0m
+[0;32mI (551393) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (551393) MQTT: Invalid data format[0m
+[0;32mI (553853) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (553853) MQTT: Invalid data format[0m
+[0;32mI (556103) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (556103) MQTT: Invalid data format[0m
+[0;32mI (558353) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (558353) MQTT: Invalid data format[0m
+[0;32mI (560603) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (560603) MQTT: Invalid data format[0m
+[0;32mI (563273) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (563273) MQTT: Invalid data format[0m
+[0;32mI (565523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (565523) MQTT: Invalid data format[0m
+[0;32mI (567983) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (567983) MQTT: Invalid data format[0m
+[0;32mI (570233) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (570233) MQTT: Invalid data format[0m
+[0;32mI (572483) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (572483) MQTT: Invalid data format[0m
+[0;32mI (574943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (574943) MQTT: Invalid data format[0m
+[0;32mI (577193) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (577193) MQTT: Invalid data format[0m
+[0;32mI (579653) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (579653) MQTT: Invalid data format[0m
+[0;32mI (582523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (582523) MQTT: Invalid data format[0m
+[0;32mI (584773) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (584773) MQTT: Invalid data format[0m
+[0;32mI (587023) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (587023) MQTT: Invalid data format[0m
+[0;32mI (589683) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (589693) MQTT: Invalid data format[0m
+[0;32mI (592153) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (592153) MQTT: Invalid data format[0m
+[0;32mI (594193) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (594193) MQTT: Invalid data format[0m
+[0;32mI (596443) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (596453) MQTT: Invalid data format[0m
+[0;32mI (598703) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (598703) MQTT: Invalid data format[0m
+[0;32mI (600953) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (600953) MQTT: Invalid data format[0m
+[0;32mI (603413) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (603413) MQTT: Invalid data format[0m
+[0;32mI (605873) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (605873) MQTT: Invalid data format[0m
+[0;32mI (608123) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (608123) MQTT: Invalid data format[0m
+[0;32mI (610573) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (610583) MQTT: Invalid data format[0m
+[0;32mI (612833) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (612833) MQTT: Invalid data format[0m
+[0;32mI (615293) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (615293) MQTT: Invalid data format[0m
+[0;32mI (617543) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (617543) MQTT: Invalid data format[0m
+[0;32mI (619793) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (619793) MQTT: Invalid data format[0m
+[0;32mI (622043) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (622043) MQTT: Invalid data format[0m
+[0;32mI (624503) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (624503) MQTT: Invalid data format[0m
+[0;32mI (626963) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (626963) MQTT: Invalid data format[0m
+[0;32mI (629213) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (629213) MQTT: Invalid data format[0m
+[0;32mI (631683) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (631683) MQTT: Invalid data format[0m
+[0;32mI (633943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (633943) MQTT: Invalid data format[0m
+[0;32mI (636173) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (636183) MQTT: Invalid data format[0m
+[0;32mI (638633) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (638633) MQTT: Invalid data format[0m
+[0;32mI (640883) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (640893) MQTT: Invalid data format[0m
+[0;32mI (643343) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (643343) MQTT: Invalid data format[0m
+[0;32mI (645593) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (645603) MQTT: Invalid data format[0m
+[0;32mI (648053) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (648053) MQTT: Invalid data format[0m
+[0;32mI (650313) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (650313) MQTT: Invalid data format[0m
+[0;32mI (652563) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (652563) MQTT: Invalid data format[0m
+[0;32mI (654613) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (654613) MQTT: Invalid data format[0m
+[0;32mI (657273) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (657273) MQTT: Invalid data format[0m
+[0;32mI (659323) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (659323) MQTT: Invalid data format[0m
+[0;32mI (661573) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (661573) MQTT: Invalid data format[0m
+[0;32mI (663823) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (663823) MQTT: Invalid data format[0m
+[0;32mI (666083) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (666083) MQTT: Invalid data format[0m
+[0;32mI (668543) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (668543) MQTT: Invalid data format[0m
+[0;32mI (670793) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (670793) MQTT: Invalid data format[0m
+[0;32mI (673453) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (673453) MQTT: Invalid data format[0m
+[0;32mI (675503) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (675503) MQTT: Invalid data format[0m
+[0;32mI (678163) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (678163) MQTT: Invalid data format[0m
+[0;32mI (680413) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (680413) MQTT: Invalid data format[0m
+[0;32mI (682663) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (682673) MQTT: Invalid data format[0m
+[0;32mI (685133) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (685133) MQTT: Invalid data format[0m
+[0;32mI (687383) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (687383) MQTT: Invalid data format[0m
+[0;32mI (689833) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (689833) MQTT: Invalid data format[0m
+[0;32mI (692293) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (692293) MQTT: Invalid data format[0m
+[0;32mI (694543) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (694543) MQTT: Invalid data format[0m
+[0;32mI (696803) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (696803) MQTT: Invalid data format[0m
+[0;32mI (699263) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (699263) MQTT: Invalid data format[0m
+[0;32mI (701513) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (701513) MQTT: Invalid data format[0m
+[0;32mI (703763) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (703763) MQTT: Invalid data format[0m
+[0;32mI (706013) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (706013) MQTT: Invalid data format[0m
+[0;32mI (708473) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (708473) MQTT: Invalid data format[0m
+[0;32mI (710733) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (710733) MQTT: Invalid data format[0m
+[0;32mI (713183) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (713183) MQTT: Invalid data format[0m
+[0;32mI (715643) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (715643) MQTT: Invalid data format[0m
+[0;32mI (717893) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (717893) MQTT: Invalid data format[0m
+[0;32mI (720353) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (720353) MQTT: Invalid data format[0m
+[0;32mI (722813) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (722813) MQTT: Invalid data format[0m
+[0;32mI (725063) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (725063) MQTT: Invalid data format[0m
+[0;32mI (727523) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (727523) MQTT: Invalid data format[0m
+[0;32mI (729783) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (729783) MQTT: Invalid data format[0m
+[0;32mI (732433) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (732433) MQTT: Invalid data format[0m
+[0;32mI (734693) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (734693) MQTT: Invalid data format[0m
+[0;32mI (736943) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (736943) MQTT: Invalid data format[0m
+[0;32mI (739403) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (739403) MQTT: Invalid data format[0m
+[0;32mI (741853) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (741863) MQTT: Invalid data format[0m
+[0;32mI (744113) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (744113) MQTT: Invalid data format[0m
+[0;32mI (746363) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (746373) MQTT: Invalid data format[0m
+[0;32mI (749023) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (749023) MQTT: Invalid data format[0m
+[0;32mI (751273) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (751273) MQTT: Invalid data format[0m
+[0;32mI (753733) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (753733) MQTT: Invalid data format[0m
+[0;32mI (756193) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (756193) MQTT: Invalid data format[0m
+[0;32mI (776673) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (776673) MQTT: Invalid data format[0m
+[0;32mI (779333) MQTT: Received data: topic=org/sdu/2024/iot/my/name/command, data=command[0m
+[0;32mI (779333) MQTT: Invalid data format[0m
