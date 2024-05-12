@@ -13,11 +13,8 @@ static const char *TAG = "ADC EXAMPLE";
 static adc_cali_handle_t adc1_cali_handle;
 static adc_oneshot_unit_handle_t adc1_handle;
 
-float read_temperature()
+void init_temperature_sensor()
 {
-    int voltage;
-    float temperature;
-
     // Configuration structs for ADC oneshot and calibration
     adc_oneshot_unit_init_cfg_t adc1_init_cfg = {
         .unit_id = ADC_UNIT_1,
@@ -38,7 +35,12 @@ float read_temperature()
     ESP_ERROR_CHECK(adc_oneshot_config_channel(adc1_handle, ADC_CHANNEL_6, &adc1_chan_cfg));
 
     ESP_ERROR_CHECK(adc_cali_create_scheme_line_fitting(&adc1_cali_cfg, &adc1_cali_handle));
+}
 
+float read_temperature()
+{
+    int voltage;
+    float temperature;
 
 	int raw_val;
 	// Read the ADC raw value

@@ -10,7 +10,7 @@ config WIFI_PASSWORD
     
 config MQTT_BROKER
 	string "Example Broker"
-	default "mqtts://cc59cf4677594320a95be6e0075e943b.s1.eu.hivemq.cloud:8883"
+	default "mqtt://broker.hivemq.com"
 
 config MQTT_COMMAND_TOPIC
 	string "Example Command Topic"
